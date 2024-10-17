@@ -1,0 +1,569 @@
+/* Reset html and body margins */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f2c9c9; /* Overall light pink background */
+  box-sizing: border-box;
+}
+
+/* Home container */
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9d7d7; /* Soft pink background */
+  padding: 40px; /* More padding for better spacing */
+}
+
+/* Home content */
+.home-content {
+  text-align: center;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 85%;
+  max-width: 750px;
+  margin: 20px auto;
+  transition: all 0.3s ease; /* Added smooth transitions */
+}
+
+/* Hover effect for home content */
+.home-content:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Introduction styling */
+.introduction h2 {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  color: #d46767; /* Darker pink for the heading */
+}
+
+.introduction p {
+  font-size: 1.3rem;
+  color: #a86666; /* Muted pink for the text */
+  margin-bottom: 25px;
+  line-height: 1.8; /* Increased line spacing for better readability */
+  text-align: justify
+}
+
+/* Profile photo */
+.profile-photo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  margin: 25px 0;
+  object-fit: cover;
+  border: 6px solid #e8b4b4; /* Pink border around the profile image */
+  transition: transform 0.3s ease; /* Smooth scale on hover */
+}
+
+.profile-photo:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Contact info */
+.contact-info p {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #a86666; /* Muted pink for contact text */
+  margin-bottom: 15px;
+}
+
+.contact-info a {
+  color: #d46767; /* Bold pink for links */
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Contact icon */
+.contact-icon {
+  margin-right: 10px;
+  color: #d46767; /* Matching link color for icons */
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Larger gap between icons for better spacing */
+  margin-top: 25px;
+}
+
+.icon {
+  color: #e08b8b; /* Dark pink for social icons */
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 2.8rem; /* Increased size for icons */
+}
+
+.icon:hover {
+  color: #d46767; /* Bold pink on hover */
+  transform: scale(1.1); /* Icon grows on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-content {
+      padding: 25px;
+      width: 90%; /* Adjusted width for smaller screens */
+  }
+
+  .introduction h2 {
+      font-size: 2.2rem;
+  }
+
+  .introduction p {
+      font-size: 1.1rem;
+  }
+
+  .profile-photo {
+      width: 220px;
+      height: 220px;
+  }
+
+  .icon {
+      font-size: 2.4rem;
+  }
+}
+
+
+
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between; /* Distribute space between content */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    left: 0;
+    overflow: hidden; /* Prevent overflow issues */
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+/* Navigation bar styling */
+.nav {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+/* Navigation links styling */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.nav-links a:hover {
+    color: #d40058;
+}
+
+ /* 1. Reflection Container */
+.reflection-container {
+    padding-top: 80px; /* To adjust for the fixed header */
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Light background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  /* Reflection Content Wrapper */
+  .reflection-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 40px;
+    max-width: 900px;
+    width: 100%;
+  }
+  .reflection-photo {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto; /* Centers the image horizontally */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  /* Main Heading */
+  .reflection-content h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Section Headings */
+  .reflection-content h3 {
+    font-size: 24px;
+    color: #ff6347; /* A soft red-orange for highlight */
+    margin-bottom: 15px;
+    border-left: 4px solid #ff6347; /* Section styling */
+    padding-left: 10px;
+  }
+  
+  /* Paragraphs */
+  .reflection-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  
+/* Skills Container Styling */
+.skills-container {
+  padding-top: 100px;  /* To adjust for the fixed header */
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Light background for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Skills Content Wrapper */
+.skills-content {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 40px;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Main Heading */
+.skills-content h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Section Headings */
+.skills-section h3 {
+  font-size: 24px;
+  color: #ff6347; /* A soft red-orange for highlight */
+  margin-bottom: 15px;
+  border-left: 4px solid #ff6347; /* Section styling */
+  padding-left: 10px;
+}
+
+/* Paragraphs */
+.skills-section p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+
+
+/* About Me Container */
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 80px; /* Add some space from the fixed header */
+    background-color: #e8c0c0;; /* Light background for contrast */
+    min-height: 100vh;
+}
+
+/* 5. About Me Content Styling */
+.about-me-content {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+    border-radius: 8px;
+}
+
+/* Heading Styling */
+.about-me-content h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Paragraph Styling */
+.about-me-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify
+}
+
+.reflection-container {
+    padding: 20px;
+    margin-top: 80px; /* Adjust for fixed header if necessary */
+  }
+  
+  .reflection-content h2, .reflection-content h3 {
+    margin-top: 20px;
+  }
+  
+  .reflection-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  /* Main container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 10rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contact content area */
+  .contact-content {
+    max-width: 800px;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Profile picture */
+  .profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #ddd;
+  }
+  
+  /* Form styling */
+  .contact-form {
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #ff6347;;
+    box-shadow: 0 0 5px rgba(5, 68, 135, 0.2);
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .submit-button {
+    padding: 12px 20px;
+    background-color: #ff6347;;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #de9c91;
+  }
+  
+  /* Social links */
+  .social-links {
+    margin-top: 30px;
+  }
+  
+  .social-links p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .social-links a {
+    font-size: 1rem;
+    color: #ff6347;;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #de9c91;
+  }
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .header {
+        height: auto;
+        padding: 15px;
+    }
+
+    .nav-links {
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .home-content h2 {
+        font-size: 28px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .icon {
+        font-size: 24px;
+    }
+}
+/* 6 Experience container */
+.experience-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9; /* Light background color */
+  padding: 20px;
+}
+
+/* Experience content */
+.experience-content {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 800px;
+  width: 90%;
+  padding: 30px;
+  text-align: left;
+}
+
+/* Title */
+.experience-content h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Paragraph styling */
+.experience-content p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify; /* Justify the text */
+}
+
+/* Image styling */
+.reflection-photo {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .experience-content {
+      padding: 20px;
+  }
+
+  .experience-content h1 {
+      font-size: 2rem;
+  }
+
+  .experience-content p {
+      font-size: 1.1rem;
+  }
+
+  .reflection-photo {
+      max-width: 100%;
+  }
+}
